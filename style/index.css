@@ -49,10 +49,6 @@ table {
 
 /*General Styles*/
 
-* {
-    border: 2px solid red !important;
-}
-
 html {
     font-size:62.5%;
 }
@@ -86,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 h2 {
     font-size: 5rem;
-    margin: 0 1.5%;
+    margin: 0 3%;
 }
 
 #nav {
@@ -95,6 +91,7 @@ h2 {
     font-size: 2rem;
     justify-content: space-around;
     align-items: center;
+    margin: 0 3% 0 0;
 }
 
 #nav a {
@@ -189,7 +186,7 @@ img {
 
 i {
     font-size: 3rem;
-    margin: 0 .5% 0 0;
+    margin: 1% .5% 0 .5%;
     color: #363062;
 }
 
@@ -205,6 +202,7 @@ i:hover {
 
 #footer button {
     font-size: 12px;
+    margin: 0 0 1% 0;
 }
 
 #footer button:hover {
