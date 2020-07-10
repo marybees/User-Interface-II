@@ -100,6 +100,14 @@ h2 {
 #nav a {
     text-decoration: none;
     color: white;
+    padding: 1%;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+#nav a:hover {
+    background-color: #363062; 
 }
 
 /*Intro*/
@@ -133,6 +141,11 @@ button {
     font-size: 20px;
 }
 
+.projects-button:hover {
+    background-color: #827397;
+    cursor: pointer;
+}
+
 /*Projects*/
 
 #projects {
@@ -144,11 +157,20 @@ button {
     text-align: center;
 }
 
-.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+.project {
     margin: 0 0 2% 0;
 }
 
-.project-1-title, .project-2-title, .project-3-title, .project-4-title, .project-5-title, .project-6-title {
+.project-title:hover {
+    background-color: white;
+    color: #363062;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #363062;
+
+}
+
+.project-title {
     background-color: #4d4c7d;
     color: white;
     padding: 5%;
@@ -167,7 +189,12 @@ img {
 
 i {
     font-size: 3rem;
-    margin: 0 .5% 0 0
+    margin: 0 .5% 0 0;
+    color: #363062;
+}
+
+i:hover {
+    color: #4d4c7d;
 }
 
 .contact {
@@ -178,6 +205,10 @@ i {
 
 #footer button {
     font-size: 12px;
+}
+
+#footer button:hover {
+    background-color: #4d4c7d;
 }
 
 .social-icons {
