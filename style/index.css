@@ -70,15 +70,23 @@ h1, h2, h3, h4, h5 {
 }
 
 #header {
+    height:20vh;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    background-color: #827397;
+    color: white;
+}
+
+.header-name {
+    width: 70%;
+    display: flex;
+    align-items: center;
 }
 
 h2 {
-    width: 70%;
     font-size: 5rem;
-    padding: 0 1%;
+    margin: 0 1.5%;
 }
 
 #nav {
@@ -91,7 +99,7 @@ h2 {
 
 #nav a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*Intro*/
@@ -109,6 +117,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 2% 7%;
+    border-radius: 10px;
 }
 
 h1 {
@@ -116,9 +125,12 @@ h1 {
     font-size: 10rem;
 }
 
-.projects-button {
-    color: black;
-    background-color: white;
+button {
+    background-color: #363062;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 /*Projects*/
@@ -136,6 +148,40 @@ h1 {
     margin: 0 0 2% 0;
 }
 
-/*flex-wrap: wrap;*/
+.project-1-title, .project-2-title, .project-3-title, .project-4-title, .project-5-title, .project-6-title {
+    background-color: #4d4c7d;
+    color: white;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
 
 /*Footer*/
+
+#footer {
+    background-color: #d8b9c3;
+}
+
+i {
+    font-size: 3rem;
+    margin: 0 .5% 0 0
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin: .5% 0 1% 0;
+}
+
+#footer button {
+    font-size: 12px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 1% 0 0 0;
+}
