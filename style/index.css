@@ -130,6 +130,11 @@ h1 {
     font-size: 10rem;
 }
 
+h3 {
+    color: #363062;
+    font-size: 5rem;
+}
+
 .projects-button, .contact-button {
     background-color: #363062;
     color: white;
@@ -145,6 +150,18 @@ h1 {
 }
 
 /*Projects*/
+
+#project-list {
+    text-align: center;
+}
+
+#about {
+    text-align: center
+}
+
+#contact {
+    text-align: center
+}
 
 #projects {
     margin: 0 .5% 5% .5%;
