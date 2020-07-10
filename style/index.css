@@ -165,7 +165,7 @@ h3 {
 }
 
 #projects {
-    margin: 0 1% 1% 1%;
+    margin: 0 1% % 1%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -209,13 +209,17 @@ img {
 
 i {
     font-size: 3rem;
-    margin: 1% .5% 0 .5%;
     color: #363062;
 }
 
 i:hover {
     color: white;
     cursor: pointer;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 1% 0 0 0;
 }
 
 .contact {
@@ -235,10 +239,4 @@ i:hover {
     color: #363062;
     font-weight: bold;
     cursor: pointer;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin: 1% 0 0 0;
 }
