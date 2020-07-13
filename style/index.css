@@ -24,6 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -244,16 +245,15 @@ i:hover {
 /*Media Tags*/
 
 @media(max-width: 800px) {
-/*Header*/
-
-/*Intro*/
-
+/*Header*/ 
+    #nav {
+        width: 75%;
+    }
 /*Projects*/
-
-/*Footer*/
-
+    #projects {
+        justify-content: space-evenly;
+    }
 }
-
 
 @media(max-width: 500px) {
 /*Header*/
@@ -263,7 +263,7 @@ i:hover {
 /*Projects*/
 
 /*Footer*/
-    
+
 }
 
 
