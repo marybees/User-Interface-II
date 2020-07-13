@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    border: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 
@@ -30,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -257,13 +258,41 @@ i:hover {
 
 @media(max-width: 500px) {
 /*Header*/
-
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        height:40vh;
+    }
+    .header-name {
+        width: 100%;
+        justify-content: center;
+    }
+    h2 {
+        font-size: 3rem;
+        margin: 0; 
+    }
+    #nav {
+        font-display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0 0 2% 0;
+    }
+    #nav a {
+        border-color: white;
+    }
 /*Intro*/
-
+    .intro-text h1 {
+        font-size: 6rem;
+    }
+    .intro-text a {
+        font-size: 1.5rem;
+    }
 /*Projects*/
-
-/*Footer*/
-
+    .project-image img {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 
