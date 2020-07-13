@@ -240,3 +240,31 @@ i:hover {
     font-weight: bold;
     cursor: pointer;
 }
+
+/*Media Tags*/
+
+@media(max-width: 800px) {
+/*Header*/
+
+/*Intro*/
+
+/*Projects*/
+
+/*Footer*/
+
+}
+
+
+@media(max-width: 500px) {
+/*Header*/
+
+/*Intro*/
+
+/*Projects*/
+
+/*Footer*/
+    
+}
+
+
+
