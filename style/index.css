@@ -246,6 +246,39 @@ img {
 
 /*Media Tags*/
 
+@media(max-width: 1920px) {
+/*Header*/ 
+     .header-name h2 {
+         font-size: 8rem;
+     }
+     #nav {
+         font-size: 3rem; 
+     }
+/*Intro*/
+    .intro-text h1 {
+        font-size: 15rem;
+    }
+    .intro-text a {
+        font-size: 4rem;
+    }
+/*Projects*/
+    .project-image img {
+        height: 850px;
+        width: 850px;
+    }
+    .project-title {
+        font-size: 3.5rem;
+    }
+/*Footer*/
+    .social-icons i {
+        font-size: 8rem;
+    } 
+    .contact-button {
+        font-size: 3rem;
+        text-align: center;
+    }
+}    
+
 @media(max-width: 800px) {
 /*Header*/ 
     #header {
@@ -378,7 +411,9 @@ img {
         .contact-button {
             font-size: 1rem;
             text-align: center;
+        }
     }
+
 
     
 
