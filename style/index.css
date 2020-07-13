@@ -61,6 +61,10 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
+img {
+    border-radius: 10px;
+}
+
 /*Header*/
 
 h1, h2, h3, h4, h5 {
@@ -127,7 +131,7 @@ h2 {
     border-radius: 10px;
 }
 
-h1 {
+.intro-text h1 {
     color: white;
     font-size: 10rem;
 }
@@ -171,7 +175,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     padding: 3.5%;
 }
@@ -198,10 +202,6 @@ h3 {
     padding: 5%;
     border-radius: 10px;
     text-decoration: none;
-}
-
-img {
-    border-radius: 10px;
 }
 
 /*Footer*/
@@ -244,53 +244,85 @@ img {
     cursor: pointer;
 }
 
-/*Media Tags*/
+/*Media Queries*/
 
 @media(max-width: 1920px) {
-/*Header*/ 
-     .header-name h2 {
-         font-size: 8rem;
-     }
-     #nav {
-         font-size: 3rem; 
-     }
-/*Intro*/
-    .intro-text h1 {
-        font-size: 15rem;
-    }
-    .intro-text a {
-        font-size: 4rem;
-    }
-/*Projects*/
-    .project-image img {
-        height: 850px;
-        width: 850px;
-    }
-    .project-title {
-        font-size: 3.5rem;
-    }
-/*Footer*/
-    .social-icons i {
-        font-size: 8rem;
+    /*Header*/ 
+         .header-name h2 {
+             font-size: 8rem;
+         }
+         #nav {
+             font-size: 3rem; 
+         }
+    /*Intro*/
+        .intro-text h1 {
+            font-size: 15rem;
+        }
+        .intro-text a {
+            font-size: 4rem;
+        }
+    /*Projects*/
+        .project-image img {
+            height: 850px;
+            width: 850px;
+        }
+        .project-title {
+            font-size: 3.5rem;
+        }
+    /*Footer*/
+        .social-icons i {
+            font-size: 8rem;
+        } 
+        .contact-button {
+            font-size: 3rem;
+            text-align: center;
+        }
     } 
-    .contact-button {
-        font-size: 3rem;
-        text-align: center;
-    }
-}    
+
+    @media(max-width: 1366px) {
+        /*Header*/ 
+        .header-name h2 {
+            font-size: 5rem;
+        }
+        #nav {
+                font-size: 1.8rem;
+             }
+        /*Intro*/
+            .intro-text h1 {
+                font-size: 10rem;
+            }
+            .intro-text a {
+                font-size: 2.5rem;
+            }
+        /*Projects*/
+            .project-image img {
+                height: 350px;
+                width: 350px;
+            }
+            .project-title {
+                font-size: 2rem;
+            }
+        /*Footer*/
+            .social-icons i {
+                font-size: 4rem;
+            } 
+            .contact-button {
+                font-size: 1rem;
+            }
+        } 
 
 @media(max-width: 800px) {
 /*Header*/ 
     #header {
         display: flex;
         flex-wrap: wrap;
-        height:50vh;
+        height:30vh;
     }
     .header-name {
         width: 100%;
         justify-content: center;
     }
-    h2 {
+    .header-name h2 {
         font-size: 5rem;
         margin: 0; 
     }
@@ -305,6 +337,9 @@ img {
         border-color: white;
     }
     /*Intro*/
+    #intro {
+        height: 40vh;
+    }
     .intro-text h1 {
         font-size: 7rem;
     }
@@ -313,12 +348,22 @@ img {
     }
     /*Projects*/
     .project {
-        display-content: center;
         padding: 2%;
     }
     .project-image img {
-        height: 350px;
-        width: 350px;
+        height: 325px;
+        width: 325px;
+    }
+    .project .project-title {
+        font-size: 1.5rem;
+    }
+    /*Footer*/
+    .social-icons i {
+        font-size: 3rem;
+    } 
+    .contact-button {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 
@@ -327,27 +372,29 @@ img {
     #header {
         display: flex;
         flex-wrap: wrap;
-        height:40vh;
+        height:20vh;
     }
     .header-name {
         width: 100%;
         justify-content: center;
     }
-    h2 {
-        font-size: 3rem;
-        margin: 0; 
+    .header-name h2 {
+        font-size: 4rem;
     }
     #nav {
         font-display: flex;
         flex-direction: column;
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0 0 2% 0;
     }
     #nav a {
         border-color: white;
     }
 /*Intro*/
+    #intro {
+        height: 30vh;
+    }
     .intro-text h1 {
         font-size: 6rem;
     }
@@ -359,6 +406,16 @@ img {
         height: 200px;
         width: 200px;
     }
+    .project .project-title {
+        font-size: 1.2rem;
+    }
+ /*Footer*/   
+    .social-icons i {
+        font-size: 2.5rem;
+    } 
+    .contact-button {
+        font-size: 1rem;
+    }
 }
 
 @media(max-width: 360px) {
@@ -366,13 +423,13 @@ img {
         #header {
             display: flex;
             flex-wrap: wrap;
-            height: 30vh;
+            height: 15vh;
         }
         .header-name {
             width: 100%;
             justify-content: center;
         }
-        h2 {
+        .header-name h2 {
             font-size: 2.5rem;
             margin: 0; 
         }
@@ -380,7 +437,7 @@ img {
             font-display: flex;
             flex-direction: column;
             width: 100%;
-            font-size: 1rem;
+            font-size: .8rem;
             margin: 0 0 2% 0;
         }
         #nav a {
@@ -388,7 +445,7 @@ img {
         }
     /*Intro*/
         #intro {
-            height: 30vh;
+            height: 20vh;
         }
         .intro-text h1 {
             font-size: 4rem;
