@@ -22,7 +22,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    border: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 
@@ -372,7 +371,7 @@ h3 {
     #header {
         display: flex;
         flex-wrap: wrap;
-        height:20vh;
+        height: 30vh;
     }
     .header-name {
         width: 100%;
@@ -386,14 +385,14 @@ h3 {
         flex-direction: column;
         width: 100%;
         font-size: 1rem;
-        margin: 0 0 2% 0;
+        margin: 0 0 5% 0;
     }
     #nav a {
         border-color: white;
     }
 /*Intro*/
     #intro {
-        height: 30vh;
+        height: 35vh;
     }
     .intro-text h1 {
         font-size: 6rem;
@@ -423,7 +422,7 @@ h3 {
         #header {
             display: flex;
             flex-wrap: wrap;
-            height: 15vh;
+            height: 25vh;
         }
         .header-name {
             width: 100%;
@@ -438,7 +437,7 @@ h3 {
             flex-direction: column;
             width: 100%;
             font-size: .8rem;
-            margin: 0 0 2% 0;
+            margin: 0 0 5% 0;
         }
         #nav a {
             border-color: white;
