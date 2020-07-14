@@ -1,1 +1,476 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*General Styles*/
+
+html {
+    font-size:62.5%;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/*Header*/
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#header {
+    height:20vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #827397;
+    color: white;
+}
+
+.header-name {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 5rem;
+    margin: 0 3%;
+}
+
+#nav {
+    width: 30%;
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 3% 0 0;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+#nav a:hover {
+    background-color: #363062; 
+}
+
+/*Intro*/
+
+#intro {
+    height:70vh;
+    background-color:white;
+    background-image:url("https://images.unsplash.com/photo-1468070454955-c5b6932bd08d?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 7%;
+    border-radius: 10px;
+}
+
+.intro-text h1 {
+    color: white;
+    font-size: 10rem;
+}
+
+h3 {
+    color: #363062;
+    font-size: 5rem;
+}
+
+.projects-button, .contact-button {
+    background-color: #363062;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    margin: 0 0 1% 0;
+    text-decoration: none;
+}
+
+.projects-button:hover {
+    background-color: #827397;
+    cursor: pointer;
+}
+
+/*Projects*/
+
+#project-list {
+    text-align: center;
+}
+
+#about {
+    text-align: center
+}
+
+#contact {
+    text-align: center
+}
+
+#projects {
+    margin: 0 1% % 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 3.5%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2% 0;
+
+}
+
+.project-title:hover {
+    background-color: white;
+    color: #363062;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #363062;
+
+}
+
+.project-title {
+    background-color: #4d4c7d;
+    color: white;
+    padding: 5%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/*Footer*/
+
+#footer {
+    background-color: #d8b9c3;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 1% 0 0 0;
+}
+
+.social-icons i {
+    font-size: 3rem;
+    color: #363062;
+}
+
+.social-icons i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin: .5% 0 1% 0;
+}
+
+.contact-button {
+    font-size: 12px;
+    margin: 0 0 1% 0;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: #363062;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media(max-width: 1920px) {
+    /*Header*/ 
+         .header-name h2 {
+             font-size: 8rem;
+         }
+         #nav {
+             font-size: 3rem; 
+         }
+    /*Intro*/
+        .intro-text h1 {
+            font-size: 15rem;
+        }
+        .intro-text a {
+            font-size: 4rem;
+        }
+    /*Projects*/
+        .project-image img {
+            height: 850px;
+            width: 850px;
+        }
+        .project-title {
+            font-size: 3.5rem;
+        }
+    /*Footer*/
+        .social-icons i {
+            font-size: 8rem;
+        } 
+        .contact-button {
+            font-size: 3rem;
+            text-align: center;
+        }
+    } 
+
+    @media(max-width: 1366px) {
+        /*Header*/ 
+        .header-name h2 {
+            font-size: 5rem;
+        }
+        #nav {
+                font-size: 1.8rem;
+             }
+        /*Intro*/
+            .intro-text h1 {
+                font-size: 10rem;
+            }
+            .intro-text a {
+                font-size: 2.5rem;
+            }
+        /*Projects*/
+            .project-image img {
+                height: 350px;
+                width: 350px;
+            }
+            .project-title {
+                font-size: 2rem;
+            }
+        /*Footer*/
+            .social-icons i {
+                font-size: 4rem;
+            } 
+            .contact-button {
+                font-size: 1rem;
+            }
+        } 
+
+@media(max-width: 800px) {
+/*Header*/ 
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        height:30vh;
+    }
+    .header-name {
+        width: 100%;
+        justify-content: center;
+    }
+    .header-name h2 {
+        font-size: 5rem;
+        margin: 0; 
+    }
+    #nav {
+        font-display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 0 0 2% 0;
+    }
+    #nav a {
+        border-color: white;
+    }
+    /*Intro*/
+    #intro {
+        height: 40vh;
+    }
+    .intro-text h1 {
+        font-size: 7rem;
+    }
+    .intro-text a {
+        font-size: 1.8rem;
+    }
+    /*Projects*/
+    .project {
+        padding: 2%;
+    }
+    .project-image img {
+        height: 325px;
+        width: 325px;
+    }
+    .project .project-title {
+        font-size: 1.5rem;
+    }
+    /*Footer*/
+    .social-icons i {
+        font-size: 3rem;
+    } 
+    .contact-button {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+/*Header*/
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        height: 30vh;
+    }
+    .header-name {
+        width: 100%;
+        justify-content: center;
+    }
+    .header-name h2 {
+        font-size: 4rem;
+    }
+    #nav {
+        font-display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 1rem;
+        margin: 0 0 5% 0;
+    }
+    #nav a {
+        border-color: white;
+    }
+/*Intro*/
+    #intro {
+        height: 35vh;
+    }
+    .intro-text h1 {
+        font-size: 6rem;
+    }
+    .intro-text a {
+        font-size: 1.5rem;
+    }
+/*Projects*/
+    .project-image img {
+        height: 200px;
+        width: 200px;
+    }
+    .project .project-title {
+        font-size: 1.2rem;
+    }
+ /*Footer*/   
+    .social-icons i {
+        font-size: 2.5rem;
+    } 
+    .contact-button {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 360px) {
+    /*Header*/
+        #header {
+            display: flex;
+            flex-wrap: wrap;
+            height: 25vh;
+        }
+        .header-name {
+            width: 100%;
+            justify-content: center;
+        }
+        .header-name h2 {
+            font-size: 2.5rem;
+            margin: 0; 
+        }
+        #nav {
+            font-display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: .8rem;
+            margin: 0 0 5% 0;
+        }
+        #nav a {
+            border-color: white;
+        }
+    /*Intro*/
+        #intro {
+            height: 20vh;
+        }
+        .intro-text h1 {
+            font-size: 4rem;
+        }
+        .intro-text a {
+            font-size: 1 rem;
+        }
+    /*Projects*/
+        .project-image img {
+            height: 140px;
+            width: 140px;
+        }
+        .project .project-title {
+            font-size: 1rem;
+        }
+    /*Footer*/
+        .social-icons i {
+            font-size: 2rem;
+        } 
+        .contact-button {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+
+    
+
+
